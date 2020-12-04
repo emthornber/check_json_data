@@ -7,12 +7,11 @@ use std::fs::File;
 use std::io::Read;
 
 fn main() {
-    let mut schema_file =
-        File::open("/home/thornbem/Work/Elm/CanWebElm/CanWebElmSchema.json").unwrap();
+    let mut schema_file = File::open("data/CanWebElmSchema.json").unwrap();
     let mut json_schema_string = String::new();
     schema_file.read_to_string(&mut json_schema_string).unwrap();
 
-    let mut data_file = File::open("/home/thornbem/Work/Elm/CanWebElm/holywelltown.json").unwrap();
+    let mut data_file = File::open("data/holywelltown.json").unwrap();
     let mut json_data_string = String::new();
     data_file.read_to_string(&mut json_data_string).unwrap();
 
