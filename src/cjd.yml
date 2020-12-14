@@ -1,0 +1,15 @@
+name: check_json_data
+version: "0.1.0"
+author: Mark Thornber <enchanted.systems@btinternet.com>
+about: Validates a JSON layout definition against a JSON schema
+args:
+    - schema:
+        short: s
+        long: schema
+        value_name: FILE
+        help: Defines the JSON schem to use
+        takes_value: true
+    - LAYOUT:
+        help: Sets the layout data file to use
+        required: true
+        index: 1
